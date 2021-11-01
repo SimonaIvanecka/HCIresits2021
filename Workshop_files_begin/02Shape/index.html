@@ -9,13 +9,37 @@
   </head>
   <body>
     <a-scene background="color: #333333">
+      <a-entity geometry="primitive: plane; height: 100; width: 100" material="side: double" rotation="90 0 0" position="0 0 0"></a-entity>
       <a-box id="myBox"
-        width="3"
-        height="2"
-        depth="1"
-        color="#BBAA33" 
-        shadow>
+      position="0 1.25 -5"
+        width="21"
+        height="15"
+        depth="3"
+        color="#AFD4FD"
+        shadow="6"
+        >
       </a-box>
+      <a-octahedron id="myStar"
+           position="4 2 -2"
+           width="100"
+           height="78"
+           color="#FFCCFF"
+            >
+     </a-octahedron>
+         <a-cylinder id="myCylic"
+           position="1 0.75 4"
+           radius="0.5"
+           height="1.5"
+           color="#FFC65D"
+             >
+      </a-cylinder>
+         <a-torus-knot id="mySign"
+           position="-1 2 2"
+           width="50"
+           height="10"
+           color="#4AEB55"
+             >
+      <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
 </html>
