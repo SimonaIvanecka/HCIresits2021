@@ -11,7 +11,8 @@
     <a-scene background="color: #333333">
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
-          <img id="unicornwrap" src="images/unicornwrap.jpg" />
+          <img id="wood2" src="images/unicornwrap.jpg" />
+          <img id="woodz" src="images/unicornwrap.jpg" />
           <img id="grass" src="images/grass.jpg" />
       </a-assets>
 
@@ -28,13 +29,13 @@
         animation__mouseenter="
           property: components.material.material.color;
           type: color;
-          to: blue;
+          to: yellow;
           startEvents: mouseenter;
           dur: 500;"
         animation__mouseleave="
           property: components.material.material.color;
           type: color;
-          to: red;
+          to: pink;
           startEvents: mouseleave;
           dur: 500;">
       </a-box>
@@ -44,8 +45,20 @@
         width="3"
         height="1"
         depth="1"
-        material="src: #unicornwrap"
-        shadow>
+        material="src: #woodz"
+        shadow
+        animation__mouseenter="
+          property: components.material;
+          type: material;
+          to: "src: #woods";
+          startEvents: mouseenter;
+          dur: 500;"
+        animation__mouseleave="
+          property: components.material.material.color;
+          type: color;
+          to: pink;
+          startEvents: mouseleave;
+          dur: 700;">>
       </a-box>
       <a-plane id="ground"
         position="0 0 -4"
